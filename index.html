@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<hmtl lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="icono/icono.png">
+    
+</head>
+<body>
+    <nav class="menu" id="menu">
+        <div class="contenedor contenedor-botones-menu">
+            <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+            <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="contenedor contenedor-enlaces-nav">
+            <div class="btn-departamentos" id="btn-departamentos">
+                <p>Todos las <span>Categorias</span></p>
+                <i class="fas fa-caret-down"></i>
+            </div>
+
+            <div class="enlaces">
+                <a href="#">Cuenta</a>
+                <a href="#">Eventos</a>
+                <a href="#">Promociones</a>
+                <a href="#">Ayuda</a>
+            </div>
+        </div>
+
+        <div class="contenedor contenedor-grid">
+            <div class="grid" id="grid">
+                <div class="categorias">
+                    <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+                    <h3 class="subtitulo">Categorias</h3>
+     
+                    <a href="#" data-categoria="MTB-biclicletas-de-montaña">MTB Biclicletas de Montaña <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="BMX-bicicletas-cross">BMX Bicicletas Cross <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="bicicletas-de-ruta">Biclicletas de Ruta <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="biclicletas-electricas">Biclicletas Electricas <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="biclicletas-para-discapacitados">Biclicletas para Discapacitados <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="Herramientas">Herramientas <i class="fas fa-angle-right"></i></a>
+                </div>
+
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria activo" data-categoria="MTB-biclicletas-de-montaña">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                            <h3 class="subtitulo">MTB Biclicletas de Montaña</h3>
+                            <a href="#">Marcos</a>
+                            <a href="#">Suspensiones</a>
+                            <a href="#">Horquillas</a>
+                            <a href="#">Cambios</a>
+                            <a href="#">Manillares</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#">
+                                <img src="img/mtb_banner.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#">
+                                <img src="img/mtb_1.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/mtb_2.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/mtb_3.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="img/mtb_4.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="subcategoria" data-categoria="BMX-bicicletas-cross">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">BMX Bicicletas Cross</h3>
+                                <a href="#">Marcos</a>
+                                <a href="#">Pegs</a>
+                                <a href="#">Horquillas</a>
+                                <a href="#">Cambios</a>
+                                <a href="#">Manillares</a>
+                            </div>
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="img/bmx_banner.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="img/bmx_1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/bmx_2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/bmx_3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/bmx_4.jpg" alt="">
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="subcategoria" data-categoria="bicicletas-de-ruta">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">Biclicletas de Ruta</h3>
+                                <a href="#">Marcos</a>
+                                <a href="#">Suspensiones</a>
+                                <a href="#">Horquillas</a>
+                                <a href="#">Cambios</a>
+                                <a href="#">Direcciones</a>
+                            </div>
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="img/rtb_banner.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="img/rtb_1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/rtb_2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/rtb_3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/rtb_4.jpg" alt="">
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="subcategoria" data-categoria="biclicletas-electricas">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">Biclicletas Electricas</h3>
+                                <a href="#">Marcos</a>
+                                <a href="#">Suspensiones</a>
+                                <a href="#">Horquillas</a>
+                                <a href="#">Cambios</a>
+                                <a href="#">Manillares</a>
+                            </div>
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="img/elb_banner.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="img/elb_1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/elb_2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/elb_3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/elb_4.jpg" alt="">
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="subcategoria" data-categoria="biclicletas-para-discapacitados">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">Biclicletas para Discapacitados</h3>
+                                <a href="#">Marcos</a>
+                                <a href="#">Suspensiones</a>
+                                <a href="#">Horquillas</a>
+                                <a href="#">Cambios</a>
+                                <a href="#">Manillares</a>
+                            </div>
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="img/dcb_banner.png" alt="">
+                                </a>
+                            </div>
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="img/dcb_1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/dcb_2.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/dcb_3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/dcb_4.jpg" alt="">
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="subcategoria" data-categoria="Herramientas">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">Herramientas</h3>
+                                <a href="#">Llaves</a>
+                                <a href="#">Copas</a>
+                                <a href="#">Alicates</a>
+                                <a href="#">Grasas</a>
+                                <a href="#">Guayas</a>
+                            </div>
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="img/her_banner.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="img/her_1.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/her_2.jpeg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/her_3.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/her_4.jpg" alt="">
+                                </a>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    
+    <main class="contenedor">
+
+            <h1>Bike Shop</h1>
+            
+        <article class="slider">
+            
+            <div class="container-all">
+                <input type="radio" id="1" name="image-slide" hidden/>
+                <input type="radio" id="2" name="image-slide" hidden/>
+                <input type="radio" id="3" name="image-slide" hidden/>
+                <input type="radio" id="4" name="image-slide" hidden/>
+
+                <div class="slide">
+                    <div class="item-slide">
+                        <img src="img/slider_1.jpg">
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/slider_2.jpg">
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/slider_3.jpg">
+                    </div>
+                    <div class="item-slide">
+                        <img src="img/slider_4.jpg">
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <label for="1" class="pagination-item">
+                        <img src="img/slider_1.jpg">
+                    </label>
+                    <label for="2" class="pagination-item">
+                        <img src="img/slider_2.jpg">
+                    </label>
+                    <label for="3" class="pagination-item">
+                        <img src="img/slider_3.jpg">
+                    </label>
+                    <label for="4" class="pagination-item">
+                        <img src="img/slider_4.jpg">
+                    </label>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <div class="wrap">
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card1"></div>
+				<div class="atras">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex velit beatae. Illum, suscipit, aspernatur!</p>
+                    <div class="boton"><a href="#">Mas Informacion</a></div>
+                </div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card2"></div>
+				<div class="atras">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex velit beatae. Illum, suscipit, aspernatur!</p>
+                    <div class="boton"><a href="#">Mas Informacion</a></div>
+                </div>
+			</div>
+		</div>
+		<div class="tarjeta-wrap">
+			<div class="tarjeta">
+				<div class="adelante card3"></div>
+				<div class="atras">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex velit beatae. Illum, suscipit, aspernatur!</p>
+                    <div class="boton"><a href="#">Mas Informacion</a></div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <div class="info-container">
+        <div class="info-main">
+            <h3>Contectenos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusamus, tenetur quidem velit voluptates nesciunt voluptas hic reprehenderit aut voluptatum quibusdam totam, illo pariatur doloribus error sapiente nisi, odio vitae.</p>
+            <a href="#">Mas Informacion</a>
+        </div>
+    </div>
+	
+	<footer>
+		<div class="footer-container">
+			<div class="footer-main">
+				<div class="footer-columna">
+					<h3>Suscríbete</h3>
+					<input type="email" placeholder="Escriba su Correo">
+					<input type="submit" value=" Suscribirse">
+				</div>
+
+				<div class="footer-columna">
+					<h3>Dirección</h3>
+					<span class="fa fa-map-marker"><p>Av Boyaca # 54-23. Bogota - Colombia</p></span>
+					<span class="fa fa-phone"><p>(+57) 320 432 8443</p></span>
+					<span class="fa fa-envelope"><p>info@jhonycastellanos12@gmail.com</p></span>
+				</div>
+
+				<div class="footer-columna">
+					<h3>Sobre Nosotros</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur repellat autem, error iste odio atque eum assumenda rem aliquam, consequatur excepturi reiciendis corrupti velit aperiam?</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-copy-redes">
+			<div class="main-copy-redes">
+				<div class="footer-copy">
+					&copy; 2019, Todos los derechos reservados - | jhonycastellanos12@gmail.com |.
+				</div>
+				<div class="footer-redes">
+					<a href="#" class="fab fa-facebook-f"></a>
+					<a href="#" class="fab fa-twitter"></a>
+					<a href="#" class="fab fa-youtube"></a>
+					<a href="#" class="fab fa-github"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</hmtl>
